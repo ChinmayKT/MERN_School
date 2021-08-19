@@ -23,7 +23,7 @@ const Header = () => {
 
   return (
     <header>
-      <Navbar bg="dark" variant="dark" expand="lg" fixed="top" collapseOnSelect>
+      <Navbar className = 'primary' bg="dark" variant="dark" expand="lg" fixed="top" collapseOnSelect>
         <Container>
           <LinkContainer to="/">
             <Navbar.Brand  ><AiFillShop/> E-Angadi</Navbar.Brand>
@@ -32,8 +32,6 @@ const Header = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Route render={(history) => <Searchbox history={history} />}/>
-
-
           <Nav
       className="mr-auto my-2 my-lg-0"
       style={{ maxHeight: '100px' }}
@@ -41,10 +39,7 @@ const Header = () => {
     >
       <Nav.Link href="#action1"disabled></Nav.Link>
       <Nav.Link href="#action2"  disabled></Nav.Link>
-    
-      <Nav.Link href="#" disabled>
-        
-      </Nav.Link>
+      <Nav.Link href="#" disabled></Nav.Link>
     </Nav>
 
 
@@ -66,7 +61,7 @@ const Header = () => {
                   </NavDropdown>    
 
                 ) : <LinkContainer to="/login">
-                <Nav.Link>
+                <Nav.Link  >
                   <FaUserAlt /> Log in
                 </Nav.Link>
               </LinkContainer>

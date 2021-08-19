@@ -8,6 +8,7 @@ import { FcViewDetails } from 'react-icons/fc';
 //_actions
 import {allTheOrders} from '../actions/orderActions'
 
+
 const AllorderListScreen = ({ history}) => {
     const dispatch = useDispatch()
 

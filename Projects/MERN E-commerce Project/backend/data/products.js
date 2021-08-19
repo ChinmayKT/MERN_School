@@ -1,39 +1,39 @@
 const products = [
   {
     
-    name: 'Airpods Wireless Bluetooth Headphones',
-    image: '/images/airpods.jpg',
+    name: 'AirPods Max',
+    image: '/images/airpod.jpg',
     description:
-      'Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working',
+      'a perfect balance of exhilarating high-fidelity audio and the effortless magic of AirPods. The ultimate personal listening experience is here',
     brand: 'Apple',
     category: 'Electronics',
-    price: 89.99,
+    price: 59900,
     countInStock: 10,
     rating: 4,
-    numReviews: 12,
+    numReviews: 1,
   },
   {
     
-    name: 'iPhone 11 Pro 256GB Memory',
-    image: '/images/phone.jpg',
+    name: 'iBUYPOWER Gaming System',
+    image: '/images/game.jpg',
     description:
-      'Introducing the iPhone 11 Pro. A transformative triple-camera system that adds tons of capability without complexity. An unprecedented leap in battery life',
-    brand: 'Apple',
+      'Power your gaming and entertainment experiences with the Trace4MR 165i Desktop Gaming Computer from iBUYPOWER. With its 10th generation 2.9 GHz Intel Core i7-10700F eight-core processor, 16GB of DDR4-3000 memory, and AMD Radeon RX 580',
+    brand: 'iBUYPOWER',
     category: 'Electronics',
-    price:  599.99,
+    price:  120000,
     countInStock: 7,
-    rating: 4.0,
+    rating: 2,
     numReviews: 8,
   },
   {
     
-    name: 'Cannon EOS 80D DSLR Camera',
-    image: '/images/camera.jpg',
+    name: 'iPad Pro',
+    image: '/images/ipad.jpg',
     description:
-      'Characterized by versatile imaging specs, the Canon EOS 80D further clarifies itself using a pair of robust focusing systems and an intuitive design',
-    brand: 'Cannon',
+      'The new iPad combines tremendous capability with unmatched ease of use and versatility. With the powerful A12 Bionic chip, support for Apple Pencil and the Smart Keyboard, and the amazing new things you can do with iPadOS 14, now there’s even more to love about iPad.',
+    brand: 'Apple',
     category: 'Electronics',
-    price:  929.99,
+    price:  29900,
     
     countInStock: 5,
     rating: 3,
@@ -41,69 +41,70 @@ const products = [
   },
   {
     
-    name: 'Sony Playstation 4 Pro White Version',
-    image: '/images/playstation.jpg',
+    name: 'iPhone 12 Pro Max',
+    image: '/images/iphone.png',
     description:
-      'The ultimate home entertainment center starts with PlayStation. Whether you are into gaming, HD movies, television, music',
-    brand: 'Sony',
+      'A14 Bionic rockets past every other smartphone chip. The Pro camera system takes low-light photography to the next level - with an even bigger jump on iPhone 12 Pro Max. And Ceramic Shield delivers four times better drop performance. Let’s see what this thing can do.',
+    brand: 'Apple',
     category: 'Electronics',
-    price: 399.99,
+    price: 120000,
     countInStock: 11,
     rating: 5,
     numReviews: 12,
   },
   {
     
-    name: 'Logitech G-Series Gaming Mouse',
-    image: '/images/mouse.jpg',
+    name: 'Home Theater System',
+    image: '/images/sound.jpg',
     description:
-      'Get a better handle on your games with this Logitech LIGHTSYNC gaming mouse. The six programmable buttons allow customization for a smooth playing experience',
-    brand: 'Logitech',
+      'Enjoy immersive audio, multi-region DVD playback, and Bluetooth wireless connectivity with the LG LHD457 5.1-Channel Region-Free DVD Home Theater System. This 330W system consists of a multi-system DVD player and amplifier, two front floorstanding speakers,',
+    brand: 'LG',
     category: 'Electronics',
-    price: 49.99,
-    countInStock: 7,
+    price: 150000,
+    countInStock: 0,
     rating: 3.5,
     numReviews: 10,
   },
   {
     
-    name: 'Amazon Echo Dot 3rd Generation',
-    image: '/images/alexa.jpg',
+    name: 'Apple Watch',
+    image: '/images/watch.png',
     description:
-      'Meet Echo Dot - Our most popular smart speaker with a fabric design. It is our most compact smart speaker that fits perfectly into small space',
+      'Measure your blood oxygen level with a revolutionary new sensor and app. Take an ECG anytime, anywhere. See your fitness metrics at a glance with the enhanced Always-On Retina display. With Apple Watch Series 6 on your wrist, a healthier, more active, more connected life is within reach.',
     brand: 'Amazon',
     category: 'Electronics',
-    price: 29.99,
-    countInStock: 0,
+    price: 25000,
+    countInStock: 15,
     rating: 4,
     numReviews: 12,
   },
   {
     
     name: 'Mac Book',
-    image: '/images/laptop.jpg',
+    image: '/images/mac.jpg',
     description:
       'Meet Echo Dot - Our most popular smart speaker with a fabric design. It is our most compact smart speaker that fits perfectly into small space',
     brand: 'Apple',
     category: 'Electronics',
-    price: 1200,
+    price: 120000,
     countInStock: 5,
     rating: 4,
     numReviews: 12,
   },
   {
     
-    name: 'Zoom TV',
-    image: '/images/tv.png',
+    name: 'Sony Bravia ',
+    image: '/images/sony.jpg',
     description:
-      'Meet Echo Dot - Our most popular smart speaker with a fabric design. It is our most compact smart speaker that fits perfectly into small space',
-    brand: 'Samsung',
+      'Powerful X1 processor uses advanced algorithms to cut noise and boost detail. With an even clearer 4K signal, everything you watch is closer to 4K resolution, full of life-like colour and contrast.',
+    brand: 'Sony',
     category: 'Electronics',
-    price: 5200,
+    price: 96000,
     countInStock: 5,
     rating: 4,
     numReviews: 12,
-  }
+  },
+  
 ]
 
 export default products

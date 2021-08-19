@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Table, Form, Button, Row, Col, ListGroup } from "react-bootstrap";
+import { Table, Form, Button, Row, Col, ListGroup, Image } from "react-bootstrap";
 
 import { useDispatch, useSelector } from "react-redux";
 import Loader from "../components/Loader";
@@ -132,12 +132,13 @@ const ProfileScreen = ({ location, history }) => {
         ) : errorOrders ? (
           <Message variant="danger">{errorOrders}</Message>
         ) : (
-          <Table striped bordered hover responsive className="table-sm">
+          <Table id='table' striped bordered hover responsive className="table-sm">
             <thead>
               <tr>
-                {/* <th>DATE </th> */}
+                <th>ORDERED DATE </th>
                 {/* <th>ID</th> */}
                 <th>ITEMS</th>
+                <th>IMAGE</th>
                 <th>TOTAL </th>
                 <th>PAID </th>
                 <th>DELIVERED</th>
@@ -147,19 +148,34 @@ const ProfileScreen = ({ location, history }) => {
             <tbody>
               {orders.map((order) => (
                 <tr key={order._id}>
-                  {/* <td>{order.id}</td> */}
+                  
+                  <td style={{width: '6rem'}}>{order.createdAt.substring(0,10)}</td>
 
-                  <td>
+                  <td style={{width: '13rem'}}>
                     {order.orderItems.map((item, index) => (
-                      <ListGroup.Item key={index}>
-                        <p>{item.name} : </p>
+                      <ListGroup.Item  key={index}>
+                        <p style={{height: '3rem' }} >{item.name} : </p>
                       </ListGroup.Item>
+                     
                     ))}
                   </td>
 
-                  <td>{order.totalPrice}</td>
+                  <td style={{width: '6rem'}}>
+                    {order.orderItems.map((item, index) => (
+                      <ListGroup.Item  key={index}>
+                        <Image style={{height: '4rem'}} src={item.image}  fluid rounded></Image>
+                      </ListGroup.Item>
+                     
+                    ))}
+                  </td>
 
-                  <td>
+                 
+                  
+                  
+
+                  <td style={{width: '6rem'}}>{order.totalPrice}</td>
+
+                  <td style={{width: '6rem'}}>
                     {order.isPaid ? (
                        (<FaCheck size='2rem' style={{color : 'green'}}/>) 
                     ) : (
@@ -167,7 +183,7 @@ const ProfileScreen = ({ location, history }) => {
                     )}
                   </td>
 
-                  <td>
+                  <td style={{width: '1rem'}} >
                     {order.isDelivered ? (
                      (<FaCheck size='2rem' style={{color : 'green'}}/>) 
                     ) : (
@@ -175,7 +191,7 @@ const ProfileScreen = ({ location, history }) => {
                     )}
                   </td>
 
-                  <td>
+                  <td style={{width: '3rem'}} >
                    
                       <a
                         style={{ textDecoration: "none" }}

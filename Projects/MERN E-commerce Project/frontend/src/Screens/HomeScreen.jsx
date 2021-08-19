@@ -36,7 +36,7 @@ const HomeScreens = ({match}) => {
     <Meta />
 
      {!keyword ? <ProductCarosal/> : <Link to='/' className='btn btn-dark' >Go Back</Link> }  
-      <h1 className='list' >Latest Products  </h1>
+      
       {loading ? <Loader/> : error ? <Message variant ='danger' >{error}</Message>
        :(
          <>
@@ -51,8 +51,8 @@ const HomeScreens = ({match}) => {
               )
             }
         </Row>
-        <div className='paginate'>
-            <Paginate  pages={pages} page={page} keyword={keyword ? keyword : ''}/>
+        <div className='paginate' >
+            <Paginate pages={pages} page={page} keyword={keyword ? keyword : ''}/>
         </div>
         
         </>

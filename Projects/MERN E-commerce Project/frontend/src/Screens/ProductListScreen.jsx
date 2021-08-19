@@ -1,5 +1,5 @@
 import React , {  useEffect}from 'react'
-import {Button,Table ,Row , Col} from 'react-bootstrap'
+import {Button,Table ,Row , Col, Image} from 'react-bootstrap'
 import {LinkContainer} from 'react-router-bootstrap'
 import {useDispatch , useSelector} from 'react-redux'
 import Loader from '../components/Loader'
@@ -83,6 +83,7 @@ const pageNumber  = match.params.pageNumber || 1
                         {/* table headings */}
                         <th>ID</th> 
                         <th>NAME</th> 
+                        <th>IMAGE</th>
                         <th>PRICE</th> 
                         <th>CATEGORY</th> 
                         <th>BRAND</th>
@@ -98,6 +99,10 @@ const pageNumber  = match.params.pageNumber || 1
                             <tr  key= {product._id}>
                                 <td>{product._id}</td>
                                 <td>{product.name}</td>
+                                <td>
+                                    <Image style={{height: '5rem' , width:'5rem'}} src={product.image}  fluid rounded></Image>
+                                    
+                                </td>
                                 <td>₹{product.price}</td>
                                 <td>{product.category}</td>
                                 <td>{product.brand}</td>

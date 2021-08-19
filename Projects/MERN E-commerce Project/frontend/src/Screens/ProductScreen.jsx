@@ -48,7 +48,7 @@ const ProductScreen = ({ history , match }) => {
           <Meta title={product.name}  />
               <Row>
               <Col md={6}>
-              <Card.Img  src={product.image} variant="top" />
+              <Card.Img className ='cardimg' src={product.image} variant="top" />
               </Col>
 
               <Col md={3}>

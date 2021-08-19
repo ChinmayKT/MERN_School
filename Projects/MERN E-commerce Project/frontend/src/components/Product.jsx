@@ -7,10 +7,10 @@ import { Link } from "react-router-dom";
 const Product = ({ product }) => {
   console.log(product.image)
   return (
-    <Card style={{height: '22rem' , width:'20rem'}} className="my-3 p-3 rounded">
+    <Card id='card'  className="my-3 p-3 rounded">
       <Link to={`/product/${product._id}`}>
       
-        <Card.Img style={{height: '12rem' , width:'18rem'}} src={product.image} variant="top" />
+        <Card.Img style={{height: '15rem' , width:'18rem'}} src={product.image}  />
       </Link>
       <Card.Body>
         <Link to={`/product/${product._id}`}>
