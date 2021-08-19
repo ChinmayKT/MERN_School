@@ -1,0 +1,27 @@
+.conta{
+    margin-top: 20px;
+    width:100px;
+    padding:20px;
+    display:flex;
+    flex-direction: column;
+    box-shadow: -1px 3px 6px 15px rgba(18,18,18,0.11);
+    -webkit-box-shadow: -1px 3px 6px 15px rgba(18,18,18,0.11);
+    -moz-box-shadow: -1px 3px 6px 15px rgba(18,18,18,0.11);
+    align-items: center;
+}
+
+.pict{
+    width:20px;
+
+}
+
+.text{
+margin-top: 10px;
+text-align: center;
+}
+
+.bton{
+    width: 180px;
+    border: none;
+    border-radius:10px ;
+}

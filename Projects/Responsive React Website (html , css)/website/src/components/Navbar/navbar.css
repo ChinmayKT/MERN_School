@@ -1,0 +1,53 @@
+.Container{
+    height:50px;
+    margin-bottom: 15px;
+    
+ 
+}
+
+.Wrapper{
+    padding:10px 20px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Logo{
+    font-weight:bold;
+    text-decoration:underline rgb(220, 117, 20);
+}
+
+.Left{
+    width:60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Menu{
+    display:flex;
+    list-style-type:none;
+
+}
+
+.MenuItem{
+    margin-right: 35px;
+    font-size: 20px;
+    font-weight:bold;
+    color : gray;
+
+}
+
+.Button{
+    border:2px solid rgb(255, 255, 255);
+    padding: 10px 15px;
+    background-color: #ffffff;
+    color:#FF7D00;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.Button:hover{
+    background-color: #FF7D00;
+    color:rgb(4, 3, 3);
+    cursor: pointer;
+}

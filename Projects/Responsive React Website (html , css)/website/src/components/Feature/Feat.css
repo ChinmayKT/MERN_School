@@ -1,0 +1,60 @@
+.container{
+    display : flex;
+}
+
+.left{
+  width:50%
+}
+
+.right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.Image{
+    width:80%;
+    height:110%;
+    float:left;
+    margin:0;
+    margin-right: 180px;
+}
+
+
+.Title{
+    font-size: 70px;
+}
+
+.subTitle{
+    font-size: 24px;
+    font-style: italic;
+    color:#333;
+    margin-top:30px;
+    font-weight: bold;
+}
+
+.desc{
+    font-size: 20px;
+    color:rgb(51, 49, 49);
+    margin-top:30px;
+}
+
+.btn{
+    width:150px;
+    border:none;
+    padding:15px 20px ;
+    background-color: darkblue;
+    color:white;
+    font-size:20px ;
+    border-radius: 12px;
+    margin-top:20px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    color:black;
+    background-color: rgb(35, 126, 4);
+
+}
