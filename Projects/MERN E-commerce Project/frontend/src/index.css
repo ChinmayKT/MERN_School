@@ -47,7 +47,8 @@ h2 {
   padding: 20px;
   margin: 40px;
   border-radius: 20%;
-  margin-left: 40%;
+  display:flex;
+  margin-left: auto;
   margin-right: auto;
 }
 .carousel a {
@@ -56,8 +57,10 @@ h2 {
 
 .cardimg{
   height: 40rem;
-    width:40rem;
+  width:40rem;
 }
+
+
 @media (max-width: 900px) {
   .carousel-caption h2 {
     font-size: 1.5rem; 
@@ -65,28 +68,38 @@ h2 {
 
   .carousel img {
     height: 300px;
+    width:300px;
     padding: 20px;
     margin: 40px;
     border-radius: 20%;
-    margin-left: 5%;
+    display:flex;
+    margin-left: auto;
     margin-right: auto;
   }
 
   #card{
     height: 25rem;
-    width:24rem ;
+    
     border-radius: 10% !important;
     
   }
 
-  .cardimg{
-    height: 20rem;
-      width:20rem;
+  .card-img{
+    height: 16rem !important ;
+     width:18rem !important;
+    
   }
 
   #table{
     height: 20rem !important;
     width: 5rem !important;
   }
+
+  .carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+  display: flex;
+  width:100%;
+}
   
 }
